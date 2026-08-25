@@ -1,0 +1,51 @@
+{
+  "project": "Wilhelm Lippl Handwerk",
+  "version": "3.1-MotionSites",
+  "testedAt": "2026-08-25T07:50:00Z",
+  "status": "PASSED",
+  "summary": "Alle 10 Prüfpunkte des MotionSites V3.1 QA-Katalogs wurden erfolgreich validiert. Die Webpräsenz ist pitch-ready, rechtssicher und hochperformant.",
+  "results": {
+    "desktopLayout": {
+      "status": "PASS",
+      "viewport": "1440x900",
+      "details": "Fluid Island Navbar, Hero mit SplitType Char-Reveal, Wide Canvas 1400px, Bento-Grid, 3D Card Stack, Testimonials und Footer vollständig gerendert."
+    },
+    "mobileResponsiveness": {
+      "status": "PASS",
+      "viewport": "375x812",
+      "details": "Keine horizontalen Überläufe, Buttons brechen sauber um, Hamburger morpht zu X (Single-X-Mechanismus), Card-Stacking schaltet unter 900px linear um."
+    },
+    "themeToggle": {
+      "status": "PASS",
+      "details": "Theme-Toggle schaltet reibungslos zwischen Dark und Light Mode um. Alle Textkontraste bleiben lesbar."
+    },
+    "interactiveCalculator": {
+      "status": "PASS",
+      "details": "Schieberegler und Gewerke-Radiobutton aktualisieren die geschätzte Preisspanne in Echtzeit mit korrekter Tausendertrennung (de-DE)."
+    },
+    "multiStepFunnel": {
+      "status": "PASS",
+      "details": "Schritt 1 (Gewerk) → Schritt 2 (Details) → Schritt 3 (Kontaktdaten & DSGVO) funktioniert einwandfrei mit Fortschrittsbalken und Validierung."
+    },
+    "legalModals": {
+      "status": "PASS",
+      "details": "#impressumModal (§ 5 TMG) und #datenschutzModal (DSGVO Art. 13) öffnen sich als Double-Bezel Modals mit Lenis-Pausierung und schließen via '✕', Backdrop oder ESC."
+    },
+    "dsgvoConsentAndMaps": {
+      "status": "PASS",
+      "details": "Consent-Banner blockiert Google Maps (data-src) bis zum Klick auf 'Alle akzeptieren'. Danach lädt die Karte sofort. Cookie-Settings-Link im Footer funktioniert."
+    },
+    "accessibilityWCAG": {
+      "status": "PASS",
+      "details": "Skip-to-Content Link vorhanden, FAQ mit Pfeiltasten bedienbar (ARIA-expanded), Focus-Visible Ringe sichtbar, alle Bilder mit Dimensionen & Alt-Texten."
+    },
+    "dataValidation": {
+      "status": "PASS",
+      "details": "Regensburger Str. 210, 85055 Ingolstadt, Tel. 0841 36681, 5.0 Google Rating und authentische Rezensionen (Frank Mayer, Roland Bretz, Sonja Straßer) lückenlos belegt. 0 Halluzinationen."
+    },
+    "consoleErrors": {
+      "status": "PASS",
+      "details": "0 JavaScript-Laufzeitfehler in der Konsole."
+    }
+  }
+}

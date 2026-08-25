@@ -26,7 +26,7 @@
 - [x] `docs/review.md` erstellt
 
 ## Phase 5: TEST (Modus-abhängige QA)
-- [ ] Automatisierter Live-Browser-Testlauf (Optional via Browser-Subagent nach User-Freigabe)
+- [x] Automatisierter Live-Browser-Testlauf erfolgreich durchgeführt & `.agents/QA-RESULTS.json` dokumentiert
 
 ## Phase 6: SHIP (Git & Commit)
 - [x] `COMMIT_MESSAGE.txt` erstellt
