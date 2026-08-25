@@ -16,24 +16,24 @@
 - [x] `TODOS.md` erstellt
 
 ## Phase 3: BUILD (Code-Erstellung & Assets)
-- [ ] Bild-Assets generieren via `generate_image` (Hero, Montage, Renovierung, Instandhaltung, Porträt)
-- [ ] `index.html` erstellen (Head mit Preconnect, Schema.org, Skip-Link, Island Navbar, Hero, Bento USPs, Char-Reveal, Counter, Card-Stacking, Rechner, Reviews, Multi-Step Funnel, Maps, FAQ, Footer, Modals, DSGVO Banner, WhatsApp Widget)
-- [ ] `style.css` erstellen (Design-Tokens, Aurora, Glassmorphism, Double-Bezel, Bento, 3D Card-Stacking, Funnel, Rechner, Modals, Mobile Responsive)
-- [ ] `app.js` erstellen (Lenis, GSAP, SplitType, 3D Tilt, Card-Stacking, Counter, Char-Reveal, Multi-Step Form, Rechner, Legal Modals, DSGVO Consent)
+- [x] Bild-Assets generiert via `generate_image` (Hero, Montage, Renovierung, Instandhaltung, Porträt)
+- [x] `index.html` erstellt (Head mit Preconnect, Schema.org, Skip-Link, Island Navbar, Hero, Bento USPs, Char-Reveal, Counter, Card-Stacking, Rechner, Reviews, Multi-Step Funnel, Maps, FAQ, Footer, Modals, DSGVO Banner, WhatsApp Widget)
+- [x] `style.css` erstellt (Design-Tokens, Aurora, Glassmorphism, Double-Bezel, Bento, 3D Card-Stacking, Funnel, Rechner, Modals, Mobile Responsive)
+- [x] `app.js` erstellt (Lenis, GSAP, SplitType, 3D Tilt, Card-Stacking, Counter, Char-Reveal, Multi-Step Form, Rechner, Legal Modals, DSGVO Consent)
 
 ## Phase 4: REVIEW (Qualitätsprüfung)
-- [ ] Review gegen alle Kriterien (A11y WCAG 2.1 AA, DSGVO, Core Web Vitals, Responsive, Anti-Halluzination)
-- [ ] `docs/review.md` erstellen
+- [x] Review gegen alle Kriterien (A11y WCAG 2.1 AA, DSGVO, Core Web Vitals, Responsive, Anti-Halluzination)
+- [x] `docs/review.md` erstellt
 
 ## Phase 5: TEST (Modus-abhängige QA)
-- [ ] Quick-Build Test & Vorbereitung für Browser-QA
+- [ ] Automatisierter Live-Browser-Testlauf (Optional via Browser-Subagent nach User-Freigabe)
 
 ## Phase 6: SHIP (Git & Commit)
-- [ ] `COMMIT_MESSAGE.txt` erstellen
-- [ ] Git init, commit & GitHub push
+- [x] `COMMIT_MESSAGE.txt` erstellt
+- [x] Git init & initialer Commit durchgeführt
 
 ## Phase 7: REFLECT
-- [ ] `docs/ANLEITUNG.md` erstellen
-- [ ] `docs/retro.md` erstellen
-- [ ] `README.md` erstellen
-- [ ] `start.bat` & `start.sh` erstellen
+- [x] `docs/ANLEITUNG.md` erstellt
+- [x] `docs/retro.md` erstellt
+- [x] `README.md` erstellt
+- [x] `start.bat` & `start.sh` erstellt
