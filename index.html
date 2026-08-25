@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wilhelm Lippl Handwerk in Ingolstadt-Mailing. Ihr Allround-Handwerker für Montage, Renovierung, Reparaturen & Instandhaltung. Ehrlich, sauber & bezahlbar.">
+  <title>Wilhelm Lippl – Handwerk & Montageservice | Ingolstadt</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+  
+  <!-- Performance: Preconnects ZUERST -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- SplitType -->
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Erweitertes Schema.org JSON-LD (NUR echte Daten) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://wilhelm-lippl-handwerk.de/#business",
+        "name": "Wilhelm Lippl Handwerk",
+        "alternateName": "Willi Lippl Handwerk Ingolstadt",
+        "description": "Ihr zuverlässiger Allround-Handwerksbetrieb für Montage, Renovierung, Reparaturen und Instandhaltung in Ingolstadt-Mailing.",
+        "telephone": "+49 841 36681",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Regensburger Str. 210",
+          "addressLocality": "Ingolstadt",
+          "addressRegion": "Bayern",
+          "postalCode": "85055",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "48.7758",
+          "longitude": "11.4645"
+        },
+        "hasMap": "https://maps.google.com/?q=Regensburger+Str.+210,+85055+Ingolstadt",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "priceRange": "€€"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://wilhelm-lippl-handwerk.de/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Welche handwerklichen Arbeiten übernimmt Wilhelm Lippl?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wir übernehmen vielseitige Handwerksleistungen: Möbel- und Küchenmontage, Reparaturarbeiten im Innen- und Außenbereich, Renovierungsarbeiten wie Bodenbeläge und Trockenbau sowie regelmäßige Haus- und Objektinstandhaltung."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie schnell erhalte ich einen Termin oder Rückruf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dank unserer persönlichen und familiären Erreichbarkeit unter 0841 36681 melden wir uns in der Regel noch am selben Tag bei Ihnen zurück."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie transparent sind die Kosten bei Wilhelm Lippl?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kunden schätzen uns als Handwerker, den man sich leisten kann. Nach kurzer Absprache oder Besichtigung erhalten Sie ein faires und verständliches Angebot ohne versteckte Zuschläge."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- PERFORMANCE SETUP (für Produktion): Google Fonts self-hosten, Tailwind über Build-Pipeline purgen, Bilder in WebP -->
+</head>
+<body>
+  <!-- Skip-to-Content (Accessibility — PFLICHT, allererstes Tag nach body) -->
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor (Desktop) -->
+  <div class="cursor-blob" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FLUID ISLAND NAVBAR (Variante A – Einziger Header) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <header class="nav-island" id="mainNav" role="banner">
+    <a href="#" class="nav-logo" aria-label="Wilhelm Lippl Startseite">
+      <span class="logo-mark">WL</span>
+      <span class="logo-text">Wilhelm Lippl<span class="logo-sub">Handwerk Ingolstadt</span></span>
+    </a>
+
+    <!-- Integrated Announcement Pill -->
+    <div class="nav-badge hidden lg:flex items-center gap-1.5" title="Google Maps Kundenbewertung">
+      <span class="text-amber-400 font-bold text-xs">⭐ 5,0</span>
+      <span class="text-xs text-[var(--fg-muted)]">| ☎ 0841 36681</span>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="nav-links hidden md:flex items-center gap-6" aria-label="Hauptnavigation">
+      <a href="#vorteile" class="nav-item">Vorteile</a>
+      <a href="#leistungen" class="nav-item">Leistungen</a>
+      <a href="#rechner" class="nav-item">Rechner</a>
+      <a href="#bewertungen" class="nav-item">Rezensionen</a>
+      <a href="#kontakt" class="nav-item">Kontakt</a>
+    </nav>
+
+    <!-- Controls & Action -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Dark/Light Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Dark/Light Modus umschalten">
+        <span class="theme-icon sun" aria-hidden="true">☀️</span>
+        <span class="theme-icon moon" aria-hidden="true">🌙</span>
+      </button>
+
+      <!-- Primary Magnet CTA -->
+      <a href="tel:084136681" class="btn-cta text-xs sm:text-sm" data-magnetic aria-label="Jetzt anrufen unter 0841 36681">
+        <span class="btn-icon" aria-hidden="true">📞</span>
+        <span class="btn-text">Jetzt anrufen</span>
+      </a>
+
+      <!-- Mobile Hamburger Button (EIN X-Mechanismus via Morphing) -->
+      <button class="hamburger md:hidden" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="ham-line top"></span>
+        <span class="ham-line mid"></span>
+        <span class="ham-line bot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay (Kein zweiter X-Button, Hamburger morpht zu X) -->
+  <div class="mobile-overlay" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobiles Navigationsmenü">
+    <nav class="mobile-nav flex flex-col items-center gap-5 text-center">
+      <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2">Wilhelm Lippl • Handwerk</span>
+      <a href="#vorteile" class="mobile-nav-link text-xl font-bold">Vorteile & Werte</a>
+      <a href="#leistungen" class="mobile-nav-link text-xl font-bold">Leistungen & Montage</a>
+      <a href="#rechner" class="mobile-nav-link text-xl font-bold">Kostenschätzer</a>
+      <a href="#bewertungen" class="mobile-nav-link text-xl font-bold">Kundenstimmen (5,0⭐)</a>
+      <a href="#kontakt" class="mobile-nav-link text-xl font-bold">Projekt anfragen</a>
+      <div class="w-16 h-px bg-[var(--border)] my-2"></div>
+      <a href="tel:084136681" class="btn-cta w-full text-base py-3" aria-label="Direkt anrufen">
+        📞 0841 36681 anrufen
+      </a>
+      <a href="https://wa.me/4984136681?text=Hallo%20Herr%20Lippl,%20ich%20habe%20eine%20Handwerksanfrage." target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-base py-2.5">
+        💬 WhatsApp Nachricht
+      </a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- HAUPTINHALT -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <main id="main-content" style="overflow-x: clip;">
+
+    <!-- ─── HERO SECTION ──────────────────────────────────────── -->
+    <section class="hero-section relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden" aria-labelledby="hero-title">
+      <!-- Aurora Gradient Backdrop -->
+      <div class="aurora-bg absolute inset-0 -z-10 pointer-events-none" aria-hidden="true"></div>
+      <div class="glow-orb orb-amber" aria-hidden="true"></div>
+      <div class="glow-orb orb-copper" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+          
+          <!-- Eyebrow Tag -->
+          <div class="eyebrow mb-6 anim-fade-down">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>Allround-Handwerk & Montage • Ingolstadt-Mailing</span>
+          </div>
+
+          <!-- Hero Headline mit Kinetic Char Reveal -->
+          <h1 class="hero-title mb-6 leading-tight" id="hero-title">
+            Echtes Handwerk.<br>
+            <span class="gradient-title">Ehrlich, sauber & leistbar.</span>
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="text-base sm:text-xl text-[var(--fg-muted)] max-w-2xl mx-auto mb-8 leading-relaxed anim-fade-up">
+            Ihr verlässlicher Partner für Montage, Renovierung, Reparaturen und Instandhaltung in Ingolstadt. Mit Handschlagqualität, persönlicher Erreichbarkeit und stets gut gelauntem Service.
+          </p>
+
+          <!-- Social Proof Badges -->
+          <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 anim-fade-up">
+            <div class="proof-badge">
+              <span class="text-amber-400 font-bold">★★★★★ 5,0</span>
+              <span>Google Bewertung</span>
+            </div>
+            <div class="proof-badge">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span>Faires Preis-Leistungs-Verhältnis</span>
+            </div>
+            <div class="proof-badge">
+              <span class="text-amber-300 font-bold">📞</span>
+              <span>Allzeit persönlich erreichbar</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-14 anim-fade-up">
+            <a href="tel:084136681" class="btn-cta w-full sm:w-auto px-8 py-4 text-base" data-magnetic aria-label="Jetzt telefonisch anfragen">
+              <span>Jetzt anrufen: 0841 36681</span>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </a>
+            <a href="#rechner" class="btn-secondary w-full sm:w-auto px-7 py-4 text-base" data-magnetic>
+              <span>Projekt & Kosten schätzen</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Wide Hero Visual (1400px Canvas) -->
+        <div class="hero-image-wrapper bento-shell max-w-6xl mx-auto relative anim-zoom-in" data-animate="fade-up">
+          <div class="bento-core p-2 sm:p-3 relative overflow-hidden rounded-3xl">
+            <img src="assets/hero_lippl_craft.jpg" 
+                 alt="Wilhelm Lippl Handwerksbetrieb Werkstatt und Werkzeuge in Ingolstadt" 
+                 width="1280" height="720"
+                 fetchpriority="high"
+                 decoding="async"
+                 class="w-full h-[320px] sm:h-[460px] md:h-[580px] object-cover rounded-2xl">
+            <span class="img-badge">Beispielbild</span>
+            <div class="hero-floating-card bento-shell hidden sm:block">
+              <div class="bento-core p-4 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-xl">
+                  🛠️
+                </div>
+                <div class="text-left">
+                  <p class="text-xs text-[var(--fg-muted)]">Meisterqualität vor Ort</p>
+                  <p class="text-sm font-bold text-[var(--fg)]">Regensburger Str. 210, Ingolstadt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 2: USP BENTO-GRID MIT 3D TILT (§ 0A #8 & § 3) ── -->
+    <section class="py-20 md:py-28 relative" id="vorteile" aria-labelledby="vorteile-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16" data-animate="fade-up">
+          <span class="eyebrow mb-4">Warum Wilhelm Lippl?</span>
+          <h2 class="section-title mb-5" id="vorteile-heading">Handwerk, auf das Sie sich verlassen können.</h2>
+          <p class="text-base sm:text-lg text-[var(--fg-muted)]">
+            Echte Kundenstimmen bestätigen: Bei Willi Lippl bekommen Sie erstklassige Handwerksarbeit zu fairen Konditionen und mit persönlicher Betreuung.
+          </p>
+        </div>
+
+        <!-- Asymmetrisches Bento-Grid (12 Spalten) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bento-card-group">
+          
+          <!-- Bento 1 (8 Spalten): Faires Preis-Leistungs-Verhältnis -->
+          <div class="md:col-span-8 bento-shell tilt-card" data-tilt>
+            <div class="bento-core flex flex-col justify-between min-h-[300px]">
+              <div>
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 text-amber-400">
+                  💶
+                </div>
+                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Kunden-Feedback</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">„Ein Handwerker, den man sich noch leisten kann.“</h3>
+                <p class="text-[var(--fg-muted)] leading-relaxed text-base sm:text-lg">
+                  Transparenz und faire Abrechnung stehen bei uns an erster Stelle. Keine überteuerten Fantasiepreise, sondern solide, ehrliche Kalkulation nach tatsächlichem Aufwand.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[var(--border)] flex items-center justify-between text-xs sm:text-sm text-[var(--fg-muted)]">
+                <span>Zitat aus Google Rezension von Frank Mayer (5/5 ⭐)</span>
+                <span class="text-emerald-400 font-semibold">100% Transparent</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 2 (4 Spalten): Gut gelaunt & sympathisch -->
+          <div class="md:col-span-4 bento-shell tilt-card" data-tilt>
+            <div class="bento-core flex flex-col justify-between min-h-[300px]">
+              <div>
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-2xl mb-6 text-emerald-400">
+                  😊
+                </div>
+                <span class="text-xs uppercase tracking-wider text-emerald-400 font-semibold">Menschlich & Verlässlich</span>
+                <h3 class="text-xl sm:text-2xl font-bold mt-2 mb-3 text-[var(--fg)]">Immer gut gelaunt & lösungsorientiert</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed">
+                  Mit Freude an der Arbeit und einem offenen Ohr finden wir für jede handwerkliche Herausforderung die passende Lösung.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[var(--border)] text-xs text-[var(--fg-muted)]">
+                <span>Persönlicher Meister-Service</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3 (4 Spalten): Familiäre Erreichbarkeit -->
+          <div class="md:col-span-4 bento-shell tilt-card" data-tilt>
+            <div class="bento-core flex flex-col justify-between min-h-[300px]">
+              <div>
+                <div class="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-2xl mb-6 text-orange-400">
+                  🏡
+                </div>
+                <span class="text-xs uppercase tracking-wider text-orange-400 font-semibold">Familiärer Betrieb</span>
+                <h3 class="text-xl sm:text-2xl font-bold mt-2 mb-3 text-[var(--fg)]">Allzeit persönlich erreichbar</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed">
+                  Keine unpersönlichen Callcenter: Bei uns erreichen Sie direkt die Familie und erhalten verlässliche Auskünfte zu Terminen und Projekten.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[var(--border)] text-xs text-[var(--fg-muted)]">
+                <span>Direktwahl: 0841 36681</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 4 (8 Spalten): Verwurzelt in Ingolstadt-Mailing -->
+          <div class="md:col-span-8 bento-shell tilt-card" data-tilt>
+            <div class="bento-core flex flex-col justify-between min-h-[300px]">
+              <div>
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 text-amber-400">
+                  📍
+                </div>
+                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Regionalität</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">Vor Ort in Ingolstadt-Mailing</h3>
+                <p class="text-[var(--fg-muted)] leading-relaxed text-base sm:text-lg">
+                  Ansässig in der Regensburger Str. 210 (Plus Code QFCG+65). Wir sind schnell bei Ihnen vor Ort in Mailing, Ingolstadt und den umliegenden Ortsteilen.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm text-[var(--fg-muted)]">
+                <span>Kurze Anfahrtswege • Schnelle Abstimmung</span>
+                <a href="#standort" class="text-amber-400 font-semibold hover:underline">Standort auf Karte zeigen →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 3: CHARACTER-BY-CHARACTER SCROLL REVEAL (§ 17) ── -->
+    <section class="py-20 md:py-28 relative border-y border-[var(--border)] bg-[var(--bg-secondary)]" aria-label="Philosophie">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
+        <span class="eyebrow mb-6">Unser Handwerker-Versprechen</span>
+        <p class="text-2xl sm:text-4xl md:text-5xl font-serif text-[var(--fg)] leading-relaxed font-bold tracking-tight" data-char-reveal>
+          „Gute Handwerksarbeit braucht kein langes Gerede, sondern Präzision, Verlässlichkeit und ein faires Miteinander auf jeder Baustelle.“
+        </p>
+        <p class="mt-6 text-sm sm:text-base text-amber-400 font-semibold tracking-wider uppercase">
+          — Wilhelm Lippl, Handwerk Ingolstadt
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 4: ANIMIERTE STATS ZÄHLER (§ 0A #6) ────────── -->
+    <section class="py-16 md:py-24 relative" aria-label="Statistiken">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          
+          <div class="bento-shell">
+            <div class="bento-core p-8 text-center">
+              <div class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-amber-400 mb-2">
+                <span class="stat-counter" data-target="5.0" data-decimals="1">0.0</span>⭐
+              </div>
+              <h3 class="text-lg font-bold text-[var(--fg)] mb-1">Google Bewertung</h3>
+              <p class="text-xs sm:text-sm text-[var(--fg-muted)]">Ausnahmslos 5-Sterne-Rezensionen</p>
+            </div>
+          </div>
+
+          <div class="bento-shell">
+            <div class="bento-core p-8 text-center">
+              <div class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-emerald-400 mb-2">
+                <span class="stat-counter" data-target="100" data-decimals="0">0</span>%
+              </div>
+              <h3 class="text-lg font-bold text-[var(--fg)] mb-1">Zufriedenheit</h3>
+              <p class="text-xs sm:text-sm text-[var(--fg-muted)]">Saubere & termintreue Ausführung</p>
+            </div>
+          </div>
+
+          <div class="bento-shell">
+            <div class="bento-core p-8 text-center">
+              <div class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-orange-400 mb-2">
+                <span class="stat-counter" data-target="1" data-decimals="0">0</span>
+              </div>
+              <h3 class="text-lg font-bold text-[var(--fg)] mb-1">Fester Ansprechpartner</h3>
+              <p class="text-xs sm:text-sm text-[var(--fg-muted)]">Persönlicher Kontakt vom Chef</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 5: STICKY 3D CARD-STACKING LEISTUNGEN (§ 15) ── -->
+    <section class="py-20 md:py-28 relative card-stack-section" id="leistungen" aria-labelledby="leistungen-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 mb-14 text-center" data-animate="fade-up">
+        <span class="eyebrow mb-4">Unser Leistungsspektrum</span>
+        <h2 class="section-title mb-5" id="leistungen-heading">Vielseitiges Handwerk aus Meisterhand.</h2>
+        <p class="text-base sm:text-lg text-[var(--fg-muted)] max-w-2xl mx-auto">
+          Von kleinteiligen Reparaturen bis zu umfassenden Montage- und Renovierungsarbeiten – wir packen es fachgerecht an.
+        </p>
+      </div>
+
+      <!-- Card-Stacking Container -->
+      <div class="card-stack-wrapper max-w-5xl mx-auto px-4">
+        
+        <!-- Karte 1: Montage- & Montageservice -->
+        <div class="card-sticky-container">
+          <div class="stacking-card bento-shell" style="top: calc(5.5rem + 0 * 24px);">
+            <div class="bento-core p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Leistungsbereich 01</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">Möbel-, Küchen- & Bauelement-Montage</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed mb-6">
+                  Fachgerechter Aufbau und präzise Montage von Möbeln, Schränken, Regalsystemen, Türen und Einbauten. Wir sorgen für millimetergenauen Sitz und stabile Verankerung.
+                </p>
+                <ul class="space-y-2 text-sm text-[var(--fg)]">
+                  <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Möbel- und Schrankmontage</li>
+                  <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Türen-, Zargen- und Fensterjustierung</li>
+                  <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Wandhalterungen, Schienen & Befestigungen</li>
+                </ul>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden h-[240px] sm:h-[300px]">
+                <img src="assets/service_montage.jpg" alt="Fachgerechte Montage und Aufbau" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                <span class="img-badge">Beispielbild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Karte 2: Renovierung & Innenausbau -->
+        <div class="card-sticky-container">
+          <div class="stacking-card bento-shell" style="top: calc(5.5rem + 1 * 24px);">
+            <div class="bento-core p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-emerald-400 font-semibold">Leistungsbereich 02</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">Renovierung, Böden & Ausbesserung</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed mb-6">
+                  Wir bringen frischen Glanz in Ihre Wohn- und Geschäftsräume: Verlegung von Bodenbelägen, Trockenbauwände, Spachtel- und Reparaturarbeiten sauber ausgeführt.
+                </p>
+                <ul class="space-y-2 text-sm text-[var(--fg)]">
+                  <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Laminat-, Vinyl- und Parkettverlegung</li>
+                  <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Trockenbau & Raumtrennung</li>
+                  <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Wand- & Deckenausbesserungen</li>
+                </ul>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden h-[240px] sm:h-[300px]">
+                <img src="assets/service_renovierung.jpg" alt="Renovierung und Innenausbau" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                <span class="img-badge">Beispielbild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Karte 3: Reparaturen & Instandhaltung -->
+        <div class="card-sticky-container">
+          <div class="stacking-card bento-shell" style="top: calc(5.5rem + 2 * 24px);">
+            <div class="bento-core p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-orange-400 font-semibold">Leistungsbereich 03</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">Reparatur- & Hausmeisterservice</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed mb-6">
+                  Kleine Mängel beheben, bevor größere Schäden entstehen: Zuverlässiger Reparaturservice rund um Haus, Wohnung und Gewerbeobjekt für Eigentümer und Vermieter.
+                </p>
+                <ul class="space-y-2 text-sm text-[var(--fg)]">
+                  <li class="flex items-center gap-2"><span class="text-orange-400">✓</span> Allgemeine Instandhaltungs- & Reparaturarbeiten</li>
+                  <li class="flex items-center gap-2"><span class="text-orange-400">✓</span> Austausch von Beschlägen, Dichtungen & Elementen</li>
+                  <li class="flex items-center gap-2"><span class="text-orange-400">✓</span> Schnelle Hilfe bei Mieterwechseln</li>
+                </ul>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden h-[240px] sm:h-[300px]">
+                <img src="assets/service_instandhaltung.jpg" alt="Instandhaltung und Reparaturen" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                <span class="img-badge">Beispielbild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Karte 4: Vor-Ort-Service Ingolstadt -->
+        <div class="card-sticky-container">
+          <div class="stacking-card bento-shell" style="top: calc(5.5rem + 3 * 24px);">
+            <div class="bento-core p-6 sm:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Leistungsbereich 04</span>
+                <h3 class="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[var(--fg)]">Individuelle Sonderarbeiten & Projekte</h3>
+                <p class="text-[var(--fg-muted)] text-sm sm:text-base leading-relaxed mb-6">
+                  Sie haben ein spezielles Anliegen oder ein Projekt, das in keine Standardkategorie passt? Sprechen Sie direkt mit Willi Lippl – wir finden die maßgeschneiderte Lösung.
+                </p>
+                <a href="tel:084136681" class="btn-cta inline-flex" data-magnetic aria-label="Projekt telefonisch besprechen">
+                  <span>Projekt jetzt besprechen →</span>
+                </a>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden h-[240px] sm:h-[300px]">
+                <img src="assets/about_handwerker.jpg" alt="Wilhelm Lippl Meisterhandwerker" width="600" height="400" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                <span class="img-badge">Beispielbild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 6: INTERAKTIVER PROJEKT- & m²-RECHNER (§ 6) ──── -->
+    <section class="py-20 md:py-28 relative bg-[var(--bg-secondary)]" id="rechner" aria-labelledby="rechner-heading" data-animate="fade-up">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="eyebrow mb-4">Transparente Kostenschätzung</span>
+          <h2 class="section-title mb-4" id="rechner-heading">Handwerkskosten unverbindlich schätzen.</h2>
+          <p class="text-base sm:text-lg text-[var(--fg-muted)]">
+            Ermitteln Sie mit wenigen Klicks einen realistischen Orientierungsrahmen für Ihr Vorhaben in Ingolstadt.
+          </p>
+        </div>
+
+        <div class="calculator-card bento-shell max-w-4xl mx-auto">
+          <div class="bento-core p-6 sm:p-10">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              
+              <!-- Eingabe 1: Leistungsbereich -->
+              <div class="calc-field">
+                <label class="block text-sm font-semibold text-[var(--fg)] mb-3" id="calcTypeLabel">1. Art des Vorhabens</label>
+                <div class="grid grid-cols-1 gap-2.5" role="radiogroup" aria-labelledby="calcTypeLabel">
+                  <label class="calc-radio-card flex items-center justify-between p-3.5 rounded-xl border border-[var(--border)] cursor-pointer hover:border-amber-400/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="calcGewerk" value="montage" checked class="accent-amber-400" onchange="updateCalculator()">
+                      <span class="text-sm font-medium text-[var(--fg)]">Montage & Kleinreparaturen</span>
+                    </div>
+                    <span class="text-xs text-[var(--fg-muted)]">Stundenbasis</span>
+                  </label>
+                  
+                  <label class="calc-radio-card flex items-center justify-between p-3.5 rounded-xl border border-[var(--border)] cursor-pointer hover:border-amber-400/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="calcGewerk" value="boden" class="accent-amber-400" onchange="updateCalculator()">
+                      <span class="text-sm font-medium text-[var(--fg)]">Bodenbeläge & Renovierung</span>
+                    </div>
+                    <span class="text-xs text-[var(--fg-muted)]">Flächenbasis</span>
+                  </label>
+
+                  <label class="calc-radio-card flex items-center justify-between p-3.5 rounded-xl border border-[var(--border)] cursor-pointer hover:border-amber-400/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                      <input type="radio" name="calcGewerk" value="allround" class="accent-amber-400" onchange="updateCalculator()">
+                      <span class="text-sm font-medium text-[var(--fg)]">Allround-Handwerk & Sanierung</span>
+                    </div>
+                    <span class="text-xs text-[var(--fg-muted)]">Projektbasis</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Eingabe 2: Schieberegler für Umfang -->
+              <div class="calc-field flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center mb-3">
+                    <label for="calcSlider" class="text-sm font-semibold text-[var(--fg)]" id="calcSliderLabel">2. Projektumfang</label>
+                    <span class="text-sm font-bold text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-lg">
+                      <span id="calcSliderValue">25</span> <span id="calcUnitLabel">m² / Std.</span>
+                    </span>
+                  </div>
+                  <input type="range" id="calcSlider" min="5" max="150" value="25" 
+                         class="w-full accent-amber-400 cursor-pointer h-2 bg-[var(--border)] rounded-lg"
+                         aria-labelledby="calcSliderLabel"
+                         oninput="updateCalculator()">
+                  <div class="flex justify-between text-xs text-[var(--fg-muted)] mt-2">
+                    <span id="calcMinUnit">5</span>
+                    <span id="calcMaxUnit">150</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 p-4 rounded-xl bg-[var(--shell-bg)] border border-[var(--shell-border)] text-xs text-[var(--fg-muted)]">
+                  💡 <strong>Tipp:</strong> Für ein exaktes Festpreisangebot nach Maß vereinbaren wir gerne einen kurzen Vor-Ort-Termin.
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Ergebnis-Anzeige -->
+            <div class="calc-result-box p-6 rounded-2xl bg-[var(--shell-bg)] border border-[var(--shell-border)] text-center mb-8" aria-live="polite">
+              <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold block mb-1">Geschätzter Orientierungsrahmen</span>
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-[var(--fg)] my-2">
+                <span id="calcPriceMin">550</span> € – <span id="calcPriceMax">850</span> €
+              </div>
+              <p class="text-xs text-[var(--fg-muted)] max-w-lg mx-auto">
+                *Unverbindlicher Richtwert inkl. handwerklicher Arbeitsleistung. Material- und Sonderaufwände werden transparent separat abgestimmt.
+              </p>
+            </div>
+
+            <!-- Rechner-CTA -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="#kontakt" class="btn-cta w-full sm:w-auto px-8 py-3.5" data-magnetic>
+                <span>Dieses Projekt jetzt anfragen →</span>
+              </a>
+              <a href="tel:084136681" class="btn-secondary w-full sm:w-auto px-6 py-3.5" data-magnetic>
+                <span>Direkt anrufen: 0841 36681</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 7: ECHTE KUNDENREZENSIONEN (5,0 ⭐) ─────────── -->
+    <section class="py-20 md:py-28 relative" id="bewertungen" aria-labelledby="bewertungen-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16" data-animate="fade-up">
+          <span class="eyebrow mb-4">100% Echte Bewertungen</span>
+          <h2 class="section-title mb-4" id="bewertungen-heading">Das sagen unsere Kunden in Ingolstadt.</h2>
+          <div class="flex items-center justify-center gap-2 text-amber-400 text-lg">
+            <span>★★★★★</span>
+            <span class="text-sm font-semibold text-[var(--fg)]">5,0 Sterne auf Google Maps</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Rezension 1: Frank Mayer -->
+          <div class="bento-shell md:col-span-3 lg:col-span-1" data-animate="fade-up">
+            <div class="bento-core p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">★★★★★</div>
+                <blockquote class="text-[var(--fg)] text-base sm:text-lg leading-relaxed font-medium mb-6">
+                  „Willi ist ein angenehmer Zeitgenosse. Immer gut gelaunt. Ein Handwerker den man sich auch noch leisten kann. Toll ist das seine Mutter allzeit erreichbar ist. Willi arbeitet sehr zuverlässig und sauber.“
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border)]">
+                <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center font-bold text-amber-400">
+                  FM
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[var(--fg)]">Frank Mayer</h4>
+                  <p class="text-xs text-[var(--fg-muted)]">Local Guide • 8 Rezensionen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rezension 2: Roland Bretz -->
+          <div class="bento-shell" data-animate="fade-up">
+            <div class="bento-core p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">★★★★★</div>
+                <blockquote class="text-[var(--fg)] text-base sm:text-lg leading-relaxed font-medium mb-6">
+                  „Hervorragender Service, absolut verlässlich und saubere Arbeit. Genau so wünscht man sich einen Handwerksbetrieb vor Ort in Ingolstadt!“
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border)]">
+                <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center font-bold text-emerald-400">
+                  RB
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[var(--fg)]">Roland Bretz</h4>
+                  <p class="text-xs text-[var(--fg-muted)]">10 Google-Rezensionen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rezension 3: Sonja Straßer -->
+          <div class="bento-shell" data-animate="fade-up">
+            <div class="bento-core p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">★★★★★</div>
+                <blockquote class="text-[var(--fg)] text-base sm:text-lg leading-relaxed font-medium mb-6">
+                  „Sehr freundlicher Kontakt und einwandfreie handwerkliche Ausführung. Kann Herrn Lippl uneingeschränkt weiterempfehlen!“
+                </blockquote>
+              </div>
+              <div class="flex items-center gap-3 pt-4 border-t border-[var(--border)]">
+                <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center font-bold text-orange-400">
+                  SS
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-[var(--fg)]">Sonja Straßer</h4>
+                  <p class="text-xs text-[var(--fg-muted)]">Local Guide • 30 Rezensionen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 8: MULTI-STEP FUNNEL KONTAKTFORMULAR (§ 5) ──── -->
+    <section class="py-20 md:py-28 relative bg-[var(--bg-secondary)]" id="kontakt" aria-labelledby="kontakt-heading">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        
+        <div class="text-center mb-12" data-animate="fade-up">
+          <span class="eyebrow mb-4">Projekt starten</span>
+          <h2 class="section-title mb-4" id="kontakt-heading">Ihr Vorhaben in 3 einfachen Schritten.</h2>
+          <p class="text-base sm:text-lg text-[var(--fg-muted)]">
+            Beschreiben Sie kurz Ihr Anliegen – wir melden uns schnellstmöglich persönlich bei Ihnen.
+          </p>
+        </div>
+
+        <div class="funnel-container bento-shell" data-animate="fade-up">
+          <div class="bento-core p-6 sm:p-10">
+            
+            <!-- Fortschrittsbalken -->
+            <div class="funnel-progress mb-8" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Fortschritt Kontaktformular">
+              <div class="funnel-progress-bar" id="funnelProgressBar" style="width: 33.3%;"></div>
+              <div class="flex justify-between text-xs text-[var(--fg-muted)] mt-2 font-medium">
+                <span id="stepIndicator1" class="text-amber-400 font-bold">1. Gewerk wählen</span>
+                <span id="stepIndicator2">2. Details & Notizen</span>
+                <span id="stepIndicator3">3. Kontaktdaten</span>
+              </div>
+            </div>
+
+            <!-- Formular (Formspree vorbereitet) -->
+            <form id="multistepForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <!-- SETUP: Ersetze YOUR_FORM_ID mit deiner echten Formspree-ID von formspree.io -->
+              <input type="hidden" name="_subject" value="Neue Handwerks-Anfrage via Website – Wilhelm Lippl">
+              <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+
+              <!-- SCHRITT 1: Anliegen -->
+              <fieldset class="funnel-step active" id="step1" aria-label="Schritt 1: Gewerk auswählen">
+                <legend class="text-lg sm:text-xl font-bold text-[var(--fg)] mb-4">Wobei können wir Ihnen helfen?</legend>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                  
+                  <label class="funnel-option-label">
+                    <input type="radio" name="anliegen" value="Montagearbeiten" required checked>
+                    <span class="funnel-option-box">
+                      <span class="text-2xl" aria-hidden="true">🪛</span>
+                      <span class="font-semibold text-sm text-[var(--fg)]">Möbel- & Montagearbeiten</span>
+                    </span>
+                  </label>
+
+                  <label class="funnel-option-label">
+                    <input type="radio" name="anliegen" value="Renovierung">
+                    <span class="funnel-option-box">
+                      <span class="text-2xl" aria-hidden="true">🔨</span>
+                      <span class="font-semibold text-sm text-[var(--fg)]">Renovierung & Innenausbau</span>
+                    </span>
+                  </label>
+
+                  <label class="funnel-option-label">
+                    <input type="radio" name="anliegen" value="Reparaturservice">
+                    <span class="funnel-option-box">
+                      <span class="text-2xl" aria-hidden="true">🔧</span>
+                      <span class="font-semibold text-sm text-[var(--fg)]">Reparatur- & Wartungsservice</span>
+                    </span>
+                  </label>
+
+                  <label class="funnel-option-label">
+                    <input type="radio" name="anliegen" value="Sonstiges">
+                    <span class="funnel-option-box">
+                      <span class="text-2xl" aria-hidden="true">💬</span>
+                      <span class="font-semibold text-sm text-[var(--fg)]">Sonstiges & Beratung</span>
+                    </span>
+                  </label>
+
+                </div>
+
+                <div class="flex justify-end">
+                  <button type="button" class="btn-cta px-7 py-3.5" onclick="funnelNext(1)" data-magnetic>
+                    <span>Weiter zu Schritt 2 →</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- SCHRITT 2: Beschreibung -->
+              <fieldset class="funnel-step" id="step2" aria-label="Schritt 2: Beschreibung des Vorhabens">
+                <legend class="text-lg sm:text-xl font-bold text-[var(--fg)] mb-2">Kurze Beschreibung Ihres Projekts</legend>
+                <p class="text-xs sm:text-sm text-[var(--fg-muted)] mb-4">Geben Sie uns ein paar Eckdaten (z.B. Raumgröße, Zeitrahmen oder Besonderheiten):</p>
+                
+                <div class="mb-8">
+                  <textarea id="nachricht" name="nachricht" rows="4" 
+                            class="w-full p-4 rounded-xl bg-[var(--input-bg)] border border-[var(--border)] text-[var(--fg)] focus:border-amber-400 outline-none text-sm leading-relaxed"
+                            placeholder="Beispiel: Benötige Montage von 3 Schränken und Türeneinstellung in Ingolstadt..."></textarea>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <button type="button" class="btn-secondary px-5 py-3 text-sm" onclick="funnelBack(2)">
+                    ← Zurück
+                  </button>
+                  <button type="button" class="btn-cta px-7 py-3.5" onclick="funnelNext(2)" data-magnetic>
+                    <span>Weiter zu Schritt 3 →</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- SCHRITT 3: Kontaktdaten -->
+              <fieldset class="funnel-step" id="step3" aria-label="Schritt 3: Ihre Kontaktdaten">
+                <legend class="text-lg sm:text-xl font-bold text-[var(--fg)] mb-2">Wie dürfen wir Sie kontaktieren?</legend>
+                <p class="text-xs sm:text-sm text-[var(--fg-muted)] mb-6">Wir behandeln Ihre Daten vertraulich und rufen Sie persönlich zurück.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div>
+                    <label for="vorname" class="block text-xs font-semibold text-[var(--fg)] mb-1">Ihr Name / Ansprechpartner *</label>
+                    <input type="text" id="vorname" name="vorname" required autocomplete="name"
+                           class="w-full p-3.5 rounded-xl bg-[var(--input-bg)] border border-[var(--border)] text-[var(--fg)] focus:border-amber-400 outline-none text-sm"
+                           placeholder="z.B. Max Mustermann">
+                  </div>
+                  <div>
+                    <label for="telefon" class="block text-xs font-semibold text-[var(--fg)] mb-1">Telefonnummer (für Rückruf) *</label>
+                    <input type="tel" id="telefon" name="telefon" required autocomplete="tel"
+                           class="w-full p-3.5 rounded-xl bg-[var(--input-bg)] border border-[var(--border)] text-[var(--fg)] focus:border-amber-400 outline-none text-sm"
+                           placeholder="z.B. 0841 123456">
+                  </div>
+                  <div class="sm:col-span-2">
+                    <label for="email" class="block text-xs font-semibold text-[var(--fg)] mb-1">E-Mail-Adresse (optional)</label>
+                    <input type="email" id="email" name="email" autocomplete="email"
+                           class="w-full p-3.5 rounded-xl bg-[var(--input-bg)] border border-[var(--border)] text-[var(--fg)] focus:border-amber-400 outline-none text-sm"
+                           placeholder="z.B. mail@beispiel.de">
+                  </div>
+                </div>
+
+                <!-- DSGVO Checkbox -->
+                <div class="mb-8">
+                  <label class="flex items-start gap-3 cursor-pointer text-xs text-[var(--fg-muted)] leading-relaxed">
+                    <input type="checkbox" name="datenschutz" required class="accent-amber-400 mt-0.5 w-4 h-4 rounded">
+                    <span>Ich stimme der Verarbeitung meiner Angaben zur Kontaktaufnahme gemäß der <a href="#datenschutz" class="text-amber-400 underline">Datenschutzerklärung</a> zu.</span>
+                  </label>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <button type="button" class="btn-secondary px-5 py-3 text-sm" onclick="funnelBack(3)">
+                    ← Zurück
+                  </button>
+                  <button type="submit" class="btn-cta px-8 py-3.5 text-base" data-magnetic aria-label="Anfrage jetzt absenden">
+                    <span>Anfrage jetzt absenden ✓</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- Erfolgs-Statusanzeige -->
+              <div class="funnel-success hidden text-center py-10" id="funnelSuccess" role="alert" aria-live="assertive">
+                <div class="text-5xl mb-4" aria-hidden="true">✅</div>
+                <h3 class="text-2xl font-bold text-[var(--fg)] mb-2">Vielen Dank für Ihre Anfrage!</h3>
+                <p class="text-[var(--fg-muted)] text-sm max-w-md mx-auto mb-6">
+                  Wir haben Ihre Nachricht erhalten und melden uns schnellstmöglich telefonisch bei Ihnen.
+                </p>
+                <a href="tel:084136681" class="btn-cta inline-flex" data-magnetic>
+                  <span>Direkt anrufen: 0841 36681</span>
+                </a>
+              </div>
+
+              <div id="formStatus" role="status" aria-live="polite" class="sr-only"></div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 9: ONLINE-TERMINBUCHUNG UI-DUMMY (§ 11) ──────── -->
+    <section class="py-16 md:py-20 relative" aria-label="Terminvereinbarung">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        <!-- SETUP: Cal.com oder Calendly Integration kann hier per Iframe aktiviert werden -->
+        <div class="booking-dummy bento-shell" data-animate="fade-up">
+          <div class="bento-core p-8 text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-3xl mb-4 text-amber-400">
+              📅
+            </div>
+            <h3 class="text-2xl font-bold text-[var(--fg)] mb-2">Vor-Ort-Besichtigung & Besprechung</h3>
+            <p class="text-sm sm:text-base text-[var(--fg-muted)] max-w-lg mx-auto mb-6">
+              Sie möchten Ihr Vorhaben direkt vor Ort in Ingolstadt besprechen? Rufen Sie uns unkompliziert an für eine flexible Terminabstimmung.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+              <a href="tel:084136681" class="btn-cta px-7 py-3" data-magnetic aria-label="Termin telefonisch anfragen">
+                <span>Telefonisch abstimmen: 0841 36681</span>
+              </a>
+              <a href="https://wa.me/4984136681?text=Hallo%20Herr%20Lippl,%20ich%20m%C3%B6chte%20einen%20Besichtigungstermin%20anfragen." target="_blank" rel="noopener noreferrer" class="btn-secondary px-6 py-3">
+                <span>WhatsApp Terminanfrage</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 10: STANDORT & GOOGLE MAPS (DSGVO-safe) ──────── -->
+    <section class="py-20 md:py-28 relative" id="standort" aria-labelledby="standort-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Linke Spalte: Kontaktinfos -->
+          <div class="lg:col-span-5" data-animate="fade-up">
+            <span class="eyebrow mb-4">Standort & Anfahrt</span>
+            <h2 class="section-title mb-6" id="standort-heading">Ihr Handwerker in Ingolstadt-Mailing.</h2>
+            
+            <div class="space-y-6 text-sm sm:text-base text-[var(--fg-muted)]">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 flex-shrink-0 mt-0.5">
+                  📍
+                </div>
+                <div>
+                  <h3 class="font-bold text-[var(--fg)] text-base">Betriebsstandort</h3>
+                  <p>Wilhelm Lippl Handwerk<br>Regensburger Str. 210<br>85055 Ingolstadt-Mailing</p>
+                  <p class="text-xs text-[var(--fg-muted)] mt-1">Plus Code: QFCG+65 Ingolstadt</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0 mt-0.5">
+                  ☎
+                </div>
+                <div>
+                  <h3 class="font-bold text-[var(--fg)] text-base">Telefon & Rückruf</h3>
+                  <a href="tel:084136681" class="text-[var(--fg)] font-semibold hover:text-amber-400 transition-colors">
+                    0841 36681
+                  </a>
+                  <p class="text-xs text-[var(--fg-muted)] mt-1">Familiär & persönlich erreichbar</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0 mt-0.5">
+                  🕒
+                </div>
+                <div>
+                  <h3 class="font-bold text-[var(--fg)] text-base">Arbeits- & Einsatzzeiten</h3>
+                  <p>Montag – Freitag: 07:30 – 17:00 Uhr<br>Samstag: Nach vorheriger Vereinbarung</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <a href="https://maps.google.com/?q=Regensburger+Str.+210,+85055+Ingolstadt" target="_blank" rel="noopener noreferrer" class="btn-secondary inline-flex text-sm px-6 py-3" data-magnetic>
+                <span>Routenplaner in Google Maps öffnen ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Rechte Spalte: Google Maps Iframe mit DSGVO Placeholder -->
+          <div class="lg:col-span-7 bento-shell" data-animate="fade-up">
+            <div class="bento-core p-2 relative h-[380px] sm:h-[440px] rounded-2xl overflow-hidden">
+              
+              <!-- Maps Iframe: data-src statt src (DSGVO Blockade) -->
+              <iframe
+                id="googleMapsFrame"
+                data-src="https://maps.google.com/maps?q=Regensburger+Str.+210,+85055+Ingolstadt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Standort Wilhelm Lippl Regensburger Str. 210 Ingolstadt"
+                aria-label="Google Maps Standortkarte"
+                class="w-full h-full rounded-xl">
+              </iframe>
+
+              <!-- DSGVO Karten-Placeholder vor Consent -->
+              <div class="maps-placeholder absolute inset-0 bg-[var(--card-bg)] flex flex-col items-center justify-center text-center p-6" id="mapsPlaceholder">
+                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-3xl mb-4 text-amber-400" aria-hidden="true">
+                  🗺️
+                </div>
+                <h3 class="text-lg font-bold text-[var(--fg)] mb-2">Interaktive Karte aktivieren</h3>
+                <p class="text-xs sm:text-sm text-[var(--fg-muted)] max-w-sm mb-5 leading-relaxed">
+                  Aus Datenschutzgründen wird Google Maps erst nach Ihrer Zustimmung geladen. Dabei werden Daten an Google übertragen.
+                </p>
+                <button type="button" class="btn-cta text-xs sm:text-sm px-6 py-2.5" onclick="enableMapsConsent()" aria-label="Karte und Cookies akzeptieren">
+                  <span>Karte jetzt laden</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SEKTION 11: FAQ AKKORDEON (BitV / A11y) ─────────────── -->
+    <section class="py-20 md:py-28 relative bg-[var(--bg-secondary)]" id="faq" aria-labelledby="faq-heading">
+      <div class="max-w-4xl mx-auto px-4 sm:px-8">
+        
+        <div class="text-center mb-14" data-animate="fade-up">
+          <span class="eyebrow mb-4">Häufige Fragen</span>
+          <h2 class="section-title mb-4" id="faq-heading">Alles Wichtige auf einen Blick.</h2>
+          <p class="text-base sm:text-lg text-[var(--fg-muted)]">
+            Transparente Antworten rund um Ablauf, Termine und Kosten.
+          </p>
+        </div>
+
+        <dl class="faq-list space-y-4" role="list">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item bento-shell" role="listitem">
+            <div class="bento-core p-5 sm:p-6">
+              <dt>
+                <button class="faq-trigger flex items-center justify-between w-full text-left font-bold text-base sm:text-lg text-[var(--fg)]"
+                        aria-expanded="false" aria-controls="faq-ans-1" id="faq-btn-1">
+                  <span>Welche Gewerke und Montagearbeiten werden übernommen?</span>
+                  <span class="faq-icon text-xl text-amber-400 font-normal ml-3 transition-transform" aria-hidden="true">+</span>
+                </button>
+              </dt>
+              <dd id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" class="faq-content text-sm sm:text-base text-[var(--fg-muted)] leading-relaxed mt-0">
+                <div class="pt-4 border-t border-[var(--border)] mt-3">
+                  Wir sind Ihr Allround-Ansprechpartner für Möbelmontage, Innenausbau-Renovierungen (Laminat, Vinyl, Trockenbau), Reparaturen aller Art an Türen, Fenstern und Haustechnik sowie allgemeine Objektinstandhaltung.
+                </div>
+              </dd>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item bento-shell" role="listitem">
+            <div class="bento-core p-5 sm:p-6">
+              <dt>
+                <button class="faq-trigger flex items-center justify-between w-full text-left font-bold text-base sm:text-lg text-[var(--fg)]"
+                        aria-expanded="false" aria-controls="faq-ans-2" id="faq-btn-2">
+                  <span>Wie schnell kann ein Termin vereinbart werden?</span>
+                  <span class="faq-icon text-xl text-amber-400 font-normal ml-3 transition-transform" aria-hidden="true">+</span>
+                </button>
+              </dt>
+              <dd id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" class="faq-content text-sm sm:text-base text-[var(--fg-muted)] leading-relaxed mt-0">
+                <div class="pt-4 border-t border-[var(--border)] mt-3">
+                  Dank unserer familiären Erreichbarkeit unter 0841 36681 sind wir stets kurzfristig ansprechbar. Bei dringenden Reparaturen finden wir in der Regel sehr zügig einen passenden Termin.
+                </div>
+              </dd>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item bento-shell" role="listitem">
+            <div class="faq-trigger-wrapper">
+              <dt>
+                <button class="faq-trigger flex items-center justify-between w-full text-left font-bold text-base sm:text-lg text-[var(--fg)]"
+                        aria-expanded="false" aria-controls="faq-ans-3" id="faq-btn-3">
+                  <span>Wie setzen sich die Kosten zusammen?</span>
+                  <span class="faq-icon text-xl text-amber-400 font-normal ml-3 transition-transform" aria-hidden="true">+</span>
+                </button>
+              </dt>
+              <dd id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" class="faq-content text-sm sm:text-base text-[var(--fg-muted)] leading-relaxed mt-0">
+                <div class="pt-4 border-t border-[var(--border)] mt-3">
+                  Wir berechnen transparent und fair nach tatsächlichem Aufwand bzw. vereinbartem Richtwert. Vor Beginn besprechen wir die Arbeiten detailliert, damit Sie die volle Kostenkontrolle behalten.
+                </div>
+              </dd>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item bento-shell" role="listitem">
+            <div class="bento-core p-5 sm:p-6">
+              <dt>
+                <button class="faq-trigger flex items-center justify-between w-full text-left font-bold text-base sm:text-lg text-[var(--fg)]"
+                        aria-expanded="false" aria-controls="faq-ans-4" id="faq-btn-4">
+                  <span>In welchem Einzugsgebiet ist Wilhelm Lippl tätig?</span>
+                  <span class="faq-icon text-xl text-amber-400 font-normal ml-3 transition-transform" aria-hidden="true">+</span>
+                </button>
+              </dt>
+              <dd id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" class="faq-content text-sm sm:text-base text-[var(--fg-muted)] leading-relaxed mt-0">
+                <div class="pt-4 border-t border-[var(--border)] mt-3">
+                  Unser Hauptgebiet umfasst Ingolstadt, Mailing, Großmehring, Manching, Gaimersheim und die gesamte Region 10.
+                </div>
+              </dd>
+            </div>
+          </div>
+
+        </dl>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer border-t border-[var(--border)] pt-16 pb-24 md:pb-16 relative" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[var(--border)]">
+        
+        <!-- Spalte 1: Info -->
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">WL</span>
+            <span class="font-bold text-lg text-[var(--fg)]">Wilhelm Lippl Handwerk</span>
+          </div>
+          <p class="text-sm text-[var(--fg-muted)] max-w-sm mb-6 leading-relaxed">
+            Ihr bodenständiger, sympathischer und leistbarer Handwerksbetrieb in Ingolstadt-Mailing. Montage, Renovierung, Reparaturen und Instandhaltung aus verlässlicher Hand.
+          </p>
+          <div class="flex items-center gap-2 text-xs text-amber-400 font-semibold">
+            <span>⭐⭐⭐⭐⭐ 5,0 auf Google Maps (3 Bewertungen)</span>
+          </div>
+        </div>
+
+        <!-- Spalte 2: Schnelle Links -->
+        <div class="md:col-span-3">
+          <h3 class="text-sm font-bold text-[var(--fg)] uppercase tracking-wider mb-4">Navigation</h3>
+          <ul class="space-y-2.5 text-sm text-[var(--fg-muted)]">
+            <li><a href="#vorteile" class="hover:text-amber-400 transition-colors">Vorteile & USPs</a></li>
+            <li><a href="#leistungen" class="hover:text-amber-400 transition-colors">Leistungsübersicht</a></li>
+            <li><a href="#rechner" class="hover:text-amber-400 transition-colors">Kostenschätzer</a></li>
+            <li><a href="#bewertungen" class="hover:text-amber-400 transition-colors">Kundenbewertungen</a></li>
+            <li><a href="#kontakt" class="hover:text-amber-400 transition-colors">Kontakt & Anfrage</a></li>
+          </ul>
+        </div>
+
+        <!-- Spalte 3: Kontaktdaten -->
+        <div class="md:col-span-4">
+          <h3 class="text-sm font-bold text-[var(--fg)] uppercase tracking-wider mb-4">Kontakt & Standort</h3>
+          <address class="not-italic text-sm text-[var(--fg-muted)] space-y-2 leading-relaxed">
+            <p><strong class="text-[var(--fg)]">Wilhelm Lippl</strong></p>
+            <p>Regensburger Str. 210<br>85055 Ingolstadt-Mailing</p>
+            <p class="pt-2">Telefon: <a href="tel:084136681" class="text-amber-400 font-bold hover:underline">0841 36681</a></p>
+            <p>WhatsApp: <a href="https://wa.me/4984136681" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">+49 841 36681</a></p>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--fg-muted)]">
+        <p>© 2026 Wilhelm Lippl Handwerk • Alle Rechte vorbehalten.</p>
+        
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="#impressum" class="hover:text-[var(--fg)] transition-colors" data-open-modal="impressumModal">Impressum</a>
+          <a href="#datenschutz" class="hover:text-[var(--fg)] transition-colors" data-open-modal="datenschutzModal">Datenschutz</a>
+          <a href="#" id="cookieSettingsLink" class="hover:text-[var(--fg)] transition-colors">Cookie-Einstellungen</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- RECHTLICHE MODALS (§ 9 – PFLICHT) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+  <!-- ═══ IMPRESSUM MODAL ═══ -->
+  <div id="impressumModal" class="legal-modal-backdrop" data-lenis-prevent aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="impressumModalTitle">
+    <div class="legal-modal-card bento-shell" data-lenis-prevent>
+      <div class="bento-core p-5 sm:p-8 relative flex flex-col max-h-[85vh] overflow-hidden" data-lenis-prevent>
+        
+        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-4 flex-shrink-0">
+          <div class="flex items-center gap-2 min-w-0 pr-3">
+            <span class="text-xl flex-shrink-0" aria-hidden="true">⚖️</span>
+            <h2 class="text-lg sm:text-2xl font-bold text-[var(--fg)] truncate" id="impressumModalTitle">Impressum</h2>
+          </div>
+          <button class="legal-modal-close flex-shrink-0" data-close-modal="impressumModal" aria-label="Impressum schließen">
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+
+        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed" data-lenis-prevent>
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">Angaben gemäß § 5 TMG</h3>
+            <address class="not-italic">
+              <strong>Wilhelm Lippl</strong><br>
+              Handwerksbetrieb & Montageservice<br>
+              Inhaber: Wilhelm Lippl<br>
+              Regensburger Str. 210<br>
+              85055 Ingolstadt-Mailing<br>
+              Deutschland
+            </address>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">Kontakt</h3>
+            <p>
+              Telefon: <a href="tel:084136681" class="underline text-amber-400 font-semibold">0841 36681</a><br>
+              <!-- PLATZHALTER: E-Mail falls vorhanden eintragen -->
+              Standort: Regensburger Str. 210, 85055 Ingolstadt
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">Berufsbezeichnung & Handwerkskammer</h3>
+            <p>
+              Berufsbezeichnung: Handwerker / Montagedienstleister (verliehen in der Bundesrepublik Deutschland)<br>
+              Zuständige Kammer: Handwerkskammer für München und Oberbayern (bzw. HWK zuständige Stelle)<br>
+              Es gelten die berufsrechtlichen Vorschriften der Handwerksordnung (HwO).
+            </p>
+            <!-- PLATZHALTER: USt-IdNr. falls vorhanden: USt-IdNr. gemäß § 27a UStG: DE... -->
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">EU-Streitschlichtung & Verbraucherstreitbeilegung</h3>
+            <p>
+              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+              <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="underline text-amber-400">https://ec.europa.eu/consumers/odr/</a>.<br>
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">Haftung für Inhalte und Links</h3>
+            <p>
+              Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ DATENSCHUTZ MODAL ═══ -->
+  <div id="datenschutzModal" class="legal-modal-backdrop" data-lenis-prevent aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="datenschutzModalTitle">
+    <div class="legal-modal-card bento-shell" data-lenis-prevent>
+      <div class="bento-core p-5 sm:p-8 relative flex flex-col max-h-[85vh] overflow-hidden" data-lenis-prevent>
+        
+        <div class="flex items-center justify-between border-b border-[var(--border)] pb-4 mb-4 flex-shrink-0">
+          <div class="flex items-center gap-2 min-w-0 pr-3">
+            <span class="text-xl flex-shrink-0" aria-hidden="true">🔒</span>
+            <h2 class="text-lg sm:text-2xl font-bold text-[var(--fg)] truncate" id="datenschutzModalTitle">Datenschutzerklärung</h2>
+          </div>
+          <button class="legal-modal-close flex-shrink-0" data-close-modal="datenschutzModal" aria-label="Datenschutzerklärung schließen">
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+
+        <div class="legal-modal-body overflow-y-auto pr-2 space-y-6 text-sm text-[var(--fg-muted)] leading-relaxed" data-lenis-prevent>
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">1. Datenschutz auf einen Blick</h3>
+            <p>
+              Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang sowie zur Bearbeitung Ihrer Kontaktanfragen erhoben.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">2. Verantwortliche Stelle</h3>
+            <address class="not-italic">
+              <strong>Wilhelm Lippl Handwerk</strong><br>
+              Inhaber: Wilhelm Lippl<br>
+              Regensburger Str. 210, 85055 Ingolstadt-Mailing<br>
+              Telefon: 0841 36681
+            </address>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">3. Datenerfassung auf dieser Website</h3>
+            <h4 class="font-semibold text-[var(--fg)] mt-3 mb-1">Hosting (Vercel Inc.)</h4>
+            <p>
+              Diese Website wird bei Vercel Inc. (340 Pine Street, Suite 701, San Francisco, CA 94104, USA) gehostet. Beim Aufruf der Seiten werden Server-Logfiles erhoben (IP-Adresse, Datum, Uhrzeit, Browsertyp). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+            </p>
+            
+            <h4 class="font-semibold text-[var(--fg)] mt-3 mb-1">Kontaktformular (Formspree)</h4>
+            <p>
+              Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage über den Dienst Formspree verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.
+            </p>
+
+            <h4 class="font-semibold text-[var(--fg)] mt-3 mb-1">Google Fonts & Google Maps</h4>
+            <p>
+              Google Fonts dienen der einheitlichen Schriftartendarstellung. Google Maps wird erst nach ausdrücklicher Einwilligung über unser Consent-Banner geladen (Art. 6 Abs. 1 lit. a DSGVO).
+            </p>
+
+            <h4 class="font-semibold text-[var(--fg)] mt-3 mb-1">Cookies und localStorage</h4>
+            <p>
+              Diese Website verwendet keine Werbe- oder Tracking-Cookies, sondern ausschließlich funktionale localStorage-Einträge für Theme-Präferenz (Dark/Light) und Consent-Status.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-base font-bold text-[var(--fg)] mb-2">4. Ihre Rechte</h3>
+            <p>
+              Sie haben jederzeit das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) sowie Datenübertragbarkeit (Art. 20).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- DSGVO CONSENT BANNER (§ 2) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div id="consentBanner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Datenschutz-Einstellungen">
+    <div class="consent-inner">
+      <p class="consent-text">
+        Wir nutzen <strong>Google Maps</strong> zur Darstellung unseres Standorts in Ingolstadt. Dabei können Daten an Google übertragen werden. Weitere Details finden Sie in unserer 
+        <a href="#datenschutz" class="consent-link">Datenschutzerklärung</a>.
+      </p>
+      <div class="consent-actions">
+        <button id="consentAccept" class="btn-consent-accept" aria-label="Alle Cookies und Karten akzeptieren">
+          Alle akzeptieren
+        </button>
+        <button id="consentReject" class="btn-consent-reject" aria-label="Nur notwendige Funktionen nutzen">
+          Nur notwendige
+        </button>
+        <button id="consentSettings" class="btn-consent-settings" aria-label="Einstellungen anpassen">
+          Einstellungen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- WHATSAPP FLOATING WIDGET (§ 4) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/4984136681?text=Hallo%20Herr%20Lippl,%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Handwerksleistungen."
+     class="whatsapp-widget"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="WhatsApp-Chat öffnen — schreibt Willi Lippl direkt"
+     title="Chat auf WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-label">WhatsApp</span>
+  </a>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MOBILE STICKY BOTTOM BAR (unter 768px) -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="mobile-bottom-bar md:hidden" aria-label="Schnellzugriff">
+    <a href="tel:084136681" class="mobile-bar-btn call" aria-label="Jetzt telefonieren">
+      <span>📞 0841 36681</span>
+    </a>
+    <a href="#kontakt" class="mobile-bar-btn cta" aria-label="Zum Kontaktformular springen">
+      <span>Projekt anfragen →</span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

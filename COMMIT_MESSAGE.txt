@@ -1,0 +1,17 @@
+feat(website): Wilhelm Lippl Handwerk – Modern UI Pro v3.1
+
+Design: Craft Warmth & Ethereal Amber-Glass + Variante C/D Fusion + Fluid Island Navbar
+Stack: HTML5, Tailwind CSS, Vanilla JS, GSAP, Lenis, SplitType
+- Unified Fluid Island Header mit integrierter 5.0⭐ Google-Badge (kein Doppelheader)
+- Kinetic Typography mit SplitType Char-Reveal & Staggered Hero Load
+- Sticky 3D Card-Stacking System (§ 15) für Leistungsbereiche mit mobilem Safe-Fallback (<=900px)
+- 3D Tilt-on-Hover Glassmorphismus-Karten (§ 0A #8) & Animierte Zähler-Stats (§ 0A #6)
+- Character-by-Character Scroll Reveal (§ 17) für das Handwerker-Versprechen
+- Interaktiver Projekt- & m²-Kostenschätzer (§ 6)
+- 3-Schritte Multi-Step Kontakt-Funnel (§ 5) mit Formspree & Honeypot
+- DSGVO Consent-Banner & datenschutzkonformes Google Maps (data-src)
+- Legal-Modal-System für Impressum (§ 5 TMG) & Datenschutz (DSGVO Art. 13)
+- WhatsApp Floating Widget mit internationaler Direktwahl (4984136681)
+- Touchpad-safe (passive Listeners, smoothTouch: false, lagSmoothing: 0)
+- WCAG 2.1 AA Accessibility (Skip-Link, ARIA-Labels, Tastatur-FAQ, Focus-Styles)
+- 0 halluzinierte Daten (Regensburger Str. 210, 0841 36681, Bewertungen Frank Mayer, Roland Bretz, Sonja Straßer)

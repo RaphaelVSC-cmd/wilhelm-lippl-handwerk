@@ -1,0 +1,3 @@
+@echo off
+echo Starte Wilhelm Lippl Handwerk Website...
+start index.html
